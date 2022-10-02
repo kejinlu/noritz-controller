@@ -1,2 +1,3 @@
-# noritz-rc7606m-re
-Noritz Remote Controller Reverse Engineering 
+# 能率燃气热水器线控逆向工程
+
+线控版本为 RC-7606M-A
