@@ -1,0 +1,763 @@
+{
+  "uuid": "da14ccb9bb37689765ef950c6df0072f",
+  "path": "Offline/noritz-controller",
+  "name": "noritz-controller",
+  "content": "",
+  "created_at": "2022-10-09 22:20:54",
+  "updated_at": "2022-10-09 22:22:13",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "4a3dea46c3788c84cb605c3e88def608",
+      "title": "三极管功能验证",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "8d4db5be82ea40728bee6ee8a1231479": 2,
+        "a5cb8fc803084158bb825edf2c7447ef": 6,
+        "f3cb94b59153475bb9ea760252bc4bf2": 2,
+        "2ea2972124fa4a899b722fba867a10e5": 2,
+        "13fbe66358ac415f8f844f8a7a60755f": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "LED",
+          2,
+          "",
+          "LED1,LED2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q1,Q2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          2,
+          "AXIAL-0.3",
+          "R1,R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R2,R3,R4,R5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          2,
+          "",
+          "U1,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "LED",
+          17,
+          "",
+          "LED3,LED4,LED5,LED6,LED7,LED8,LED9,LED10,LED11,LED12,LED13,LED14,LED15,LED16,LED17,LED18,LED19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q3,Q4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          9,
+          "AXIAL-0.3",
+          "R7,R8,R9,R10,R11,R12,R13,R14,R15",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R16,R17,R18,R19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          11,
+          "",
+          "U3,U4,U5,U6,U7,U8,U9,U10,U11,U12,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "ESP32-DevKitC",
+          1,
+          "ESP32_DEVKITC",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "c9bbebae21c34c49830bc9f5ee913dd3",
+            "uuid": "691f6eed1c4c46d3a38ffe57e3deed55"
+          }
+        ],
+        [
+          "2N2222",
+          1,
+          "",
+          "Q5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "10K",
+          3,
+          "AXIAL-0.3",
+          "R20,R23,R24",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "20K",
+          3,
+          "AXIAL-0.3",
+          "R21,R22,R25",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "SPST_Open",
+          1,
+          "",
+          "S1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ]
+      ],
+      "updateTime": 1665325254,
+      "createTime": 1665325254,
+      "histories": [],
+      "created_at": "2022-10-09 22:20:54",
+      "updated_at": "2022-10-09 22:20:54"
+    },
+    {
+      "uuid": "d9fc3e1d6b1163f58947cc2323d71436",
+      "title": "线控LED电路",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "8d4db5be82ea40728bee6ee8a1231479": 17,
+        "a5cb8fc803084158bb825edf2c7447ef": 13,
+        "f3cb94b59153475bb9ea760252bc4bf2": 2,
+        "13fbe66358ac415f8f844f8a7a60755f": 1,
+        "2ea2972124fa4a899b722fba867a10e5": 11
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "LED",
+          2,
+          "",
+          "LED1,LED2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q1,Q2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          2,
+          "AXIAL-0.3",
+          "R1,R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R2,R3,R4,R5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          2,
+          "",
+          "U1,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "LED",
+          17,
+          "",
+          "LED3,LED4,LED5,LED6,LED7,LED8,LED9,LED10,LED11,LED12,LED13,LED14,LED15,LED16,LED17,LED18,LED19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q3,Q4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          9,
+          "AXIAL-0.3",
+          "R7,R8,R9,R10,R11,R12,R13,R14,R15",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R16,R17,R18,R19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          11,
+          "",
+          "U3,U4,U5,U6,U7,U8,U9,U10,U11,U12,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "ESP32-DevKitC",
+          1,
+          "ESP32_DEVKITC",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "c9bbebae21c34c49830bc9f5ee913dd3",
+            "uuid": "691f6eed1c4c46d3a38ffe57e3deed55"
+          }
+        ],
+        [
+          "2N2222",
+          1,
+          "",
+          "Q5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "10K",
+          3,
+          "AXIAL-0.3",
+          "R20,R23,R24",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "20K",
+          3,
+          "AXIAL-0.3",
+          "R21,R22,R25",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "SPST_Open",
+          1,
+          "",
+          "S1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ]
+      ],
+      "updateTime": 1665325254,
+      "createTime": 1665325254,
+      "histories": [],
+      "created_at": "2022-10-09 22:20:54",
+      "updated_at": "2022-10-09 22:20:54"
+    },
+    {
+      "uuid": "902d833e915ab147b124c8b79d408e56",
+      "title": "ESP32接线",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "a5cb8fc803084158bb825edf2c7447ef": 6,
+        "691f6eed1c4c46d3a38ffe57e3deed55": 1,
+        "574bf25f763142d1b201011589f1bdfc": 1,
+        "f3cb94b59153475bb9ea760252bc4bf2": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "LED",
+          2,
+          "",
+          "LED1,LED2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q1,Q2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          2,
+          "AXIAL-0.3",
+          "R1,R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R2,R3,R4,R5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          2,
+          "",
+          "U1,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "LED",
+          17,
+          "",
+          "LED3,LED4,LED5,LED6,LED7,LED8,LED9,LED10,LED11,LED12,LED13,LED14,LED15,LED16,LED17,LED18,LED19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "8d4db5be82ea40728bee6ee8a1231479"
+          }
+        ],
+        [
+          "2N2222",
+          2,
+          "",
+          "Q3,Q4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "270",
+          9,
+          "AXIAL-0.3",
+          "R7,R8,R9,R10,R11,R12,R13,R14,R15",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1",
+          4,
+          "AXIAL-0.3",
+          "R16,R17,R18,R19",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "Logicstate1",
+          11,
+          "",
+          "U3,U4,U5,U6,U7,U8,U9,U10,U11,U12,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2ea2972124fa4a899b722fba867a10e5"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "ESP32-DevKitC",
+          1,
+          "ESP32_DEVKITC",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "c9bbebae21c34c49830bc9f5ee913dd3",
+            "uuid": "691f6eed1c4c46d3a38ffe57e3deed55"
+          }
+        ],
+        [
+          "2N2222",
+          1,
+          "",
+          "Q5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "f3cb94b59153475bb9ea760252bc4bf2"
+          }
+        ],
+        [
+          "10K",
+          3,
+          "AXIAL-0.3",
+          "R20,R23,R24",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "20K",
+          3,
+          "AXIAL-0.3",
+          "R21,R22,R25",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "SPST_Open",
+          1,
+          "",
+          "S1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ]
+      ],
+      "updateTime": 1665325254,
+      "createTime": 1665325254,
+      "histories": [],
+      "created_at": "2022-10-09 22:20:54",
+      "updated_at": "2022-10-09 22:20:54"
+    }
+  ],
+  "sort": [
+    "4a3dea46c3788c84cb605c3e88def608",
+    "d9fc3e1d6b1163f58947cc2323d71436",
+    "902d833e915ab147b124c8b79d408e56"
+  ],
+  "title": "noritz-controller",
+  "foldername": "noritz-controller",
+  "schfilename": "noritz-controller.json",
+  "schfilemtime": 1665325254724
+}
