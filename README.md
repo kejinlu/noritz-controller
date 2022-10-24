@@ -8,5 +8,6 @@
 缘由是能率的户外燃气热水器每次断电之后再次通电，会恢复到默认的关机状态，都需要人去按下开机按钮，比较麻烦。
 另外也无法记录燃气热水器实时的状态。所以想通过对燃气热水的控制器进行逆向，然后通过esp32这类wifi芯片来将燃气热水器的相关信息接入Homeassistant。
 
-硬件相关内容见这里: https://oshwhub.com/kejinlu/noritz-controller
-相关记录在这里：https://www.yuque.com/docs/share/056407e9-8b06-42f9-a408-2f286408d99f
+硬件设计: https://oshwhub.com/kejinlu/noritz-controller
+
+逆向过程详解：https://www.yuque.com/docs/share/056407e9-8b06-42f9-a408-2f286408d99f
