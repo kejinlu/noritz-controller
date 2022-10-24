@@ -11,7 +11,7 @@ extern "C" {
 #define WIFI_SSID "WIFI_SSID"
 #define WIFI_PASSWORD "WIFI_PASSWORD"
 
-//  MQTT Broker信息
+//  MQTT Broker信息 需要修改成自己的MQTT Broker地址
 #define MQTT_HOST IPAddress(192, 168, 1, 5)
 #define MQTT_PORT 1883
 
@@ -25,16 +25,17 @@ const long interval = 5000;
 const int RX_PIN = 34;
 const int TX_PIN = 32;
 
-bool Power_Prv_state = false;
-bool Heating_Prv_state = false;
-bool test = false;
+bool powerPrvState = false;
+bool heatingPrvState = false;
+
+// 每次启动都会发送一次初始状态，这个变量就是标记初始状态是否已经发送
+bool initSent = false; 
 
 unsigned long duration;
 
 AsyncMqttClient mqttClient;
 TimerHandle_t mqttReconnectTimer;
 TimerHandle_t wifiReconnectTimer;
-
 
 void connectToWifi() {
   Serial.println("Connecting to Wi-Fi...");
@@ -111,16 +112,20 @@ void delayNow(long microSeconds)
 void onMqttMessage(char* topic, char* payload, AsyncMqttClientMessageProperties properties, size_t len, size_t index, size_t total) {
   String messageTemp;
   for (int i = 0; i < len; i++) {
-    //Serial.print((char)payload[i]);
     messageTemp += (char)payload[i];
   }
 
   DynamicJsonDocument doc(1024);
   DeserializationError error = deserializeJson(doc, messageTemp.c_str());
+  if (error) {
+    Serial.print("deserializeJson() failed: ");
+    Serial.println(error.f_str());
+    return;
+  }
   const char* power = doc["power"];
   if (strcmp(power, "ON") == 0) {
     // 开机
-    if(Power_Prv_state == false) {
+    if(powerPrvState == false) {
       digitalWrite(TX_PIN, HIGH);
       delayNow(50000);
       digitalWrite(TX_PIN, LOW);
@@ -128,13 +133,15 @@ void onMqttMessage(char* topic, char* payload, AsyncMqttClientMessageProperties 
 
   } else if(strcmp(power, "OFF") == 0) {
     // 关机
-    if(Power_Prv_state == true) {
+    if(powerPrvState == true) {
       digitalWrite(TX_PIN, HIGH);
       delayNow(50000);
       digitalWrite(TX_PIN, LOW);
       
-      delayNow(50000);
-      // check
+      // 因为线控有可能处于待机状态，按一次会激活，不会直接关机
+      // 温度相关的会亮起，这个时候再按一次才是关机
+      // 这边需要延迟一定的时长再去检测当前状态做判断，延迟的时长需要大于命令发送之后，主机状态返回的时间，这里用300ms，远远大于相关时长比较保险
+      delayNow(300000);
       duration = pulseIn(RX_PIN, HIGH, 40000);
       if (duration != 0) {
         digitalWrite(TX_PIN, HIGH);
@@ -192,7 +199,7 @@ void loop() {
   duration = pulseIn(RX_PIN, HIGH, 40000);
   if (duration == 0) {
     // 关机状态
-    if (Power_Prv_state == true || test == false) {
+    if (powerPrvState == true || initSent == false) {
       StaticJsonDocument<300> doc;
       doc["power"] = "OFF";
       doc["heating"] = "OFF";
@@ -203,12 +210,12 @@ void loop() {
       uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_Output, 1, true, json);
       Serial.printf("Publishing on topic %s at QoS 1, packetId: %i", MQTT_PUB_Output, packetIdPub1);
 
-      Power_Prv_state = false;
-      Heating_Prv_state = false;
+      powerPrvState = false;
+      heatingPrvState = false;
     }
   } else if (duration > 0 && duration < 150) {
     // 燃烧状态
-    if (Heating_Prv_state == false || Power_Prv_state == false || test == false) {
+    if (heatingPrvState == false || powerPrvState == false || initSent == false) {
 
       StaticJsonDocument<300> doc;
       doc["power"] = "ON";
@@ -220,12 +227,12 @@ void loop() {
       uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_Output, 1, true, json);
       Serial.printf("Publishing on topic %s at QoS 1, packetId: %i", MQTT_PUB_Output, packetIdPub1);
 
-      Heating_Prv_state = true;
-      Power_Prv_state = true;
+      heatingPrvState = true;
+      powerPrvState = true;
     }
   } else if (duration > 900) {
     // 开机状态
-    if (Heating_Prv_state == true || Power_Prv_state == false || test == false) {
+    if (heatingPrvState == true || powerPrvState == false || initSent == false) {
 
       StaticJsonDocument<300> doc;
       doc["power"] = "ON";
@@ -237,12 +244,12 @@ void loop() {
       uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_Output, 1, true, json);
       Serial.printf("Publishing on topic %s at QoS 1, packetId: %i", MQTT_PUB_Output, packetIdPub1);
 
-      Heating_Prv_state = false;
-      Power_Prv_state = true;
+      heatingPrvState = false;
+      powerPrvState = true;
     }
   }
-  if(test == false) {
-    test = true;
+  if(initSent == false) {
+    initSent = true;
   }
   delay(1000);
 }
