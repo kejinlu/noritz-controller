@@ -1,6 +1,6 @@
 # 能率燃气热水器线控逆向工程
 
-<img src="https://cdn.nlark.com/yuque/0/2022/png/328998/1664755346231-342f5f18-6382-4dbe-91f3-8e13de78e959.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_15%2Ctext_5Y2i5YWL%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_536%2Climit_0" width="25%"/>
+<img src="https://cdn.nlark.com/yuque/0/2022/jpeg/328998/1665892207477-41f3e260-5b2f-4b63-af00-7db736f00e69.jpeg?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_26%2Ctext_5Y2i5YWL%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_900%2Climit_0" width="25%"/>
 
 
 线控型号为 RC-7606M-A
