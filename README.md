@@ -10,4 +10,4 @@
 
 硬件设计: https://oshwhub.com/kejinlu/noritz-controller
 
-逆向过程详解：[https://www.yuque.com/docs/share/056407e9-8b06-42f9-a408-2f286408d99f](https://kejinlu.com/2022/10/noritz-controller/)https://kejinlu.com/2022/10/noritz-controller/
+逆向过程详解：https://kejinlu.com/2022/10/noritz-controller/
